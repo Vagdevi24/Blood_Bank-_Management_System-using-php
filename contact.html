@@ -1,0 +1,280 @@
+<html>
+    <head>
+        <title>Contact us page</title>
+        <style>*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins',sans-serif;
+        
+        }
+        section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            /* background: #095a55; */
+            /* background-image:url("https://cdn.pixabay.com/photo/2019/09/20/18/00/green-tea-4492259_1280.jpg"); */
+            height: 100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        
+        }
+        section::before{
+        
+            content:'';
+            position:absolute;
+            top:0;
+            left:0;
+            width:50%;
+            height:100%;
+            /* background: #fff38e; */
+        
+        
+        }
+        .container{
+            position: relative;
+            min-width: 1100px;
+            min-height: 550px;
+            display: flex;
+            z-index: 1000;
+            background: #fff;
+        
+        }
+        .container .contactInfo
+        {
+            position: absolute;
+            top:40px;
+            width: 350px;
+            height: calc(100%  - 80px);
+            background: #095a55; 
+            z-index:1;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 20px 25px rgba(0,0,0,0.15);
+        
+        }
+        .container .contactInfo h2{
+        
+            color: #fff;
+            font-size: 24px;
+            font-weight: 500;
+        }
+        .container .contactInfo ul.info{
+            position: relative;
+            margin: 20px 0;
+        
+        
+        }
+        .container .contactInfo ul.info li{
+            position: relative;
+            list-style: none;
+            display:flex;
+            margin:20px 0;
+            cursor: pointer;
+            align-items: flex-start;
+        
+        }
+        .container .contactInfo ul.info li span:nth-child(1)
+        {
+            width:30px;
+            min-width: 30px;
+        }
+         .container .contactInfo ul.info li span:nth-child(1) img
+        {
+            max-width: 100%;
+            /* filter:invert(1); */
+        } 
+        .container .contactInfo ul.info li span:nth-child(2)
+        {
+                color: #fff;
+                margin-left: 10px;
+                font-weight: 300;
+        }
+        .container .contactInfo ul.sci
+        {
+            position: relative;
+            display: flex;
+        }
+        .container .contactInfo ul.sci li
+        {
+            list-style: none;
+            margin-right: 15px;
+        }
+        .container .contactForm
+        {
+            position: absolute;
+            padding: 70px 50px;
+            padding-left: 250px;
+            margin-left: 150px;
+            width:calc(100%-150px);
+            height: 100%;
+            background: #fff;
+            box-shadow:0 50px 50px rgba(0,0,0,0. 25) ;
+        }
+        .container .contactForm h2{
+            /* color:#0f3959; */
+            font-size: 24px;
+            font-weight: 500;
+        }
+        
+        input{
+            height: 50px;
+        }
+        
+        .container .contactForm .formBox{
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding-top: 30px;
+        
+        }
+        .container .contactForm .formBox .inputBox{
+            position: relative;
+            margin-bottom: 35px;
+        }
+        .container .contactForm .formBox .inputBox.w50{
+            width:47%;
+        }
+        .container .contactForm .formBox .inputBox.w100{
+            width:100%;
+        }
+        
+        .container .contactForm .formBox .inputBox input,.container .contactForm .formBox .inputBox textarea
+           {
+            width: 100%;
+            resize: none;
+            padding: 5px 0;
+            font-size: 18px;
+            font-weight: 300;
+             color:#333; 
+            border:none;
+            outline:none;
+            border-bottom: 1px solid #777;
+           }
+           .container .contactForm .formBox .inputBox textarea{
+            height: 120px;
+           }
+           .container .contactForm .formBox .inputBox span{
+            position:absolute;
+            left: 0;
+            padding: 5px 0;
+            /* padding-bottom: 10px; */
+            pointer-events: none;
+            font-size: 18px;
+            font-weight: 300;
+            transition: 0.3s;
+        
+           }
+           .container .contactForm .formBox .inputBox input:focus ~ span,.container .contactForm .formBox .inputBox input:valid ~ span,
+           .container .contactForm .formBox .inputBox textarea:focus ~ span,
+           .container .contactForm .formBox .inputBox textarea:valid ~ span
+           {
+                 transform: translate(20px);
+                 /* transform: translateY(15px); */
+                 font-size: 10px;
+                 font-weight: 300;
+                 letter-spacing: 5px;
+                 color: #095a55;
+                 /* font-weight: 500; */
+           }
+           .container .contactForm .formBox .inputBox input[type="submit"]{
+            position: relative;
+            cursor:pointer;
+            background: #095a55;
+            color: #fff;
+            border: none;
+            max-width: 150px;
+            padding: 12px;
+           }
+           .container .contactForm .formBox .inputBox input[type="submit"]:hover{
+            background: #095a55; 
+           }
+           
+        
+          
+        
+        </style>
+    </head>
+    <body>
+        <section>
+            <div class="container">
+            <div class="contactInfo">
+             <div>
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        
+                        <span style="color: lightsalmon;">Gottumukala Road<br>
+                        Kanchikacherla,521180<br>
+                        NTR district</span>
+
+                    </li>
+                    <li>
+                        <span>
+                            <img src="https://freepngimg.com/thumb/gmail/77580-webmail-address-mail-yahoo!-email-icon.png" width="50px">
+                        </span>
+                        <span><a href="mailto:abcdef@gmail.com" class="mail">vagdevimarisetti1@gmail.com</a> <br></span>
+                    </li>
+                    <li>
+                        <span>
+                            <img src="https://thumbs.dreamstime.com/z/white-cell-logo-call-icon-icon-phone-tube-dark-background-cell-logo-call-icon-icon-phone-tube-dark-background-133800148.jpg" width="50px">
+                        </span>
+                        <span>9876543210<br></span>
+                    </li>
+
+                </ul>
+             </div>
+             
+             <ul class="sci">
+                <li><a href="https://www.facebook.com/"><img src="https://www.seekpng.com/png/full/470-4701717_facebook-icon-gray-circle-facebook-logo-pequeo-blanco.png" width="50px"></a></li>
+                <li><a href="https://www.instagram.com/"><img src="https://www.seekpng.com/png/full/472-4727621_instagram-logo-png-format-click-here-to-download.png" width="50px"></a></li>
+                <li><a href="https://www.twitter.com/"><img src="https://www.seekpng.com/png/full/5-54303_twitter-introduces-a-new-app-for-windows-twitter.png" width="50px"></a></li>
+                
+
+             </ul> 
+            </div>
+             
+            <div class="contactForm">
+                <h2>Send a Message</h2>
+                <form action="contact.php" method="post">
+                <div class="formBox" >
+                    <div class="inputBox w50">
+                        <input type="text" required name="Fname" >
+                        <span> Name</span>
+                        
+                    </div>
+                    
+                    <div class="inputBox w50">
+                        <input type="email" required name="Email">
+                        <span>Email Address</span>
+                        
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" required name="mb">
+                        <span>Mobile Number</span>
+                        
+                    </div>
+                    <div class="inputBox w100">
+                        <textarea  required name="msg"></textarea>
+                        <span>Write your message here...</span>
+                        
+                    </div>
+                    <div class="inputBox w100">
+                        <input type="submit" value="Send">
+                        
+                    </div>
+
+                </div>
+                </form>
+
+            </div>
+            </div>
+        </section>
+    </body>
+</html>
